@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F2FDF62-A1E0-4FDF-8F44-08B710BE9B60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Azavar.Sitefinity.Modules.PageSpeed</RootNamespace>
+    <AssemblyName>Azavar.Sitefinity.Modules.PageSpeed</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Sitefinity, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Model, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Personalization, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Personalization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Resources, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Search, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Search.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Comments, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Services.Comments.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Documents, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Services.Documents.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Events, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Services.Events.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Notifications, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Services.Notifications.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Statistics, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Services.Statistics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Utilities, Version=9.1.6110.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <HintPath>packages\Telerik.Sitefinity.Core.9.1.6110.0\lib\net40\Telerik.Sitefinity.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\PageSpeedConfig.cs" />
+    <Compile Include="Model\Arg.cs" />
+    <Compile Include="Model\AvoidLandingPageRedirects.cs" />
+    <Compile Include="Model\EnableGzipCompression.cs" />
+    <Compile Include="Model\FormattedResults.cs" />
+    <Compile Include="Model\Header.cs" />
+    <Compile Include="Model\IPageSpeedFormattable.cs" />
+    <Compile Include="Model\LeverageBrowserCaching.cs" />
+    <Compile Include="Model\MainResourceServerResponseTime.cs" />
+    <Compile Include="Model\MinifyCss.cs" />
+    <Compile Include="Model\MinifyHtml.cs" />
+    <Compile Include="Model\MinifyJavaScript.cs" />
+    <Compile Include="Model\MinimizeRenderBlockingResources.cs" />
+    <Compile Include="Model\OptimizeImages.cs" />
+    <Compile Include="Model\PageScannedEventArgs.cs" />
+    <Compile Include="Model\PageSpeedResult.cs" />
+    <Compile Include="Model\PageSpeedService.cs" />
+    <Compile Include="Model\PageStats.cs" />
+    <Compile Include="Model\PrioritizeVisibleContent.cs" />
+    <Compile Include="Model\Result.cs" />
+    <Compile Include="Model\Rulegroups.cs" />
+    <Compile Include="Model\RuleResults.cs" />
+    <Compile Include="Model\Speed.cs" />
+    <Compile Include="Model\Summary.cs" />
+    <Compile Include="Model\Url.cs" />
+    <Compile Include="Model\Urlblock.cs" />
+    <Compile Include="Model\Version.cs" />
+    <Compile Include="PageSpeedModule.cs" />
+    <Compile Include="PageSpeedInstaller.cs" />
+    <Compile Include="PageSpeedResources.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="ViewModels\PageSpeedResultViewModel.cs" />
+    <Compile Include="ViewModels\RuleSetViewModel.cs" />
+    <Compile Include="ViewModels\UrlblockViewModel.cs" />
+    <Compile Include="Web\Services\PageSpeedStatus.cs" />
+    <Compile Include="Web\Services\PageSpeedWebService.cs" />
+    <Compile Include="Web\Services\IPageSpeedWebService.cs" />
+    <Compile Include="Web\UI\Views\PageSpeedView.cs" />
+    <Compile Include="ViewMapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BasicSettings\readme.txt" />
+    <Content Include="Configuration\readme.txt" />
+    <Content Include="FieldControls\readme.txt" />
+    <EmbeddedResource Include="Web\Scripts\PageSpeedView.js" />
+    <Content Include="Web\Scripts\readme.txt" />
+    <Content Include="Web\Services\readme.txt" />
+    <EmbeddedResource Include="Web\Styles\PageSpeedStyles.css">
+      <DependentUpon>PageSpeedStyles.less</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web\Styles\PageSpeedStyles.min.css">
+      <DependentUpon>PageSpeedStyles.css</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Web\UI\readme.txt" />
+    <EmbeddedResource Include="Web\UI\Views\PageSpeedView.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <Content Include="Widgets\Form\readme.txt" />
+    <Content Include="Widgets\Layout\readme.txt" />
+    <Content Include="Widgets\Page\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\Styles\PageSpeedStyles.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
