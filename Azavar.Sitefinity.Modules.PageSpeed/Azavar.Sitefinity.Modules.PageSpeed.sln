@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azavar.Sitefinity.Modules.PageSpeed", "Azavar.Sitefinity.Modules.PageSpeed.csproj", "{6F2FDF62-A1E0-4FDF-8F44-08B710BE9B60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azavar.Sitefinity.Modules.PageSpeed.Tests", "..\Azavar.Sitefinity.Modules.PageSpeed.Tests\Azavar.Sitefinity.Modules.PageSpeed.Tests.csproj", "{B3434151-9B8E-4F18-AAD9-652B759EDED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F2FDF62-A1E0-4FDF-8F44-08B710BE9B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2FDF62-A1E0-4FDF-8F44-08B710BE9B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2FDF62-A1E0-4FDF-8F44-08B710BE9B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2FDF62-A1E0-4FDF-8F44-08B710BE9B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3434151-9B8E-4F18-AAD9-652B759EDED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3434151-9B8E-4F18-AAD9-652B759EDED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3434151-9B8E-4F18-AAD9-652B759EDED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3434151-9B8E-4F18-AAD9-652B759EDED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
